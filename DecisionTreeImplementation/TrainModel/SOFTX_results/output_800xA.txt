@@ -1,0 +1,13 @@
+if (FICO_>500 <= 0.50) then
+   if (term_60 months <= 0.50) then
+      out := 1;
+   elsif (term_60 months >  0.50) then
+      out := 0;
+   end_if;
+elsif (FICO_>500 >  0.50) then
+   if (gender_Male <= 0.50) then
+      out := 0;
+   elsif (gender_Male >  0.50) then
+      out := 1;
+   end_if;
+end_if;

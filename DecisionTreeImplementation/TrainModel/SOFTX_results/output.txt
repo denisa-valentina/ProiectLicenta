@@ -1,0 +1,10 @@
+|--- FICO_>500 <= 0.50
+|   |--- term_60 months <= 0.50
+|   |   |--- class: 1
+|   |--- term_60 months >  0.50
+|   |   |--- class: 0
+|--- FICO_>500 >  0.50
+|   |--- gender_Male <= 0.50
+|   |   |--- class: 0
+|   |--- gender_Male >  0.50
+|   |   |--- class: 1

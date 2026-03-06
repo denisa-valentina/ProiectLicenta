@@ -1,0 +1,213 @@
+{
+    "data": {
+        "criterion": "gini",
+        "splitter": "best",
+        "max_depth": null,
+        "min_samples_split": 2,
+        "min_samples_leaf": 1,
+        "min_weight_fraction_leaf": 0.0,
+        "max_features": null,
+        "max_leaf_nodes": null,
+        "random_state": 1,
+        "min_impurity_decrease": 0.0,
+        "class_weight": null,
+        "ccp_alpha": {
+            "value": 0.014171370928955346,
+            "np-type": "numpy.float64"
+        },
+        "monotonic_cst": null,
+        "feature_names_in_": {
+            "pymiloed-ndarray-list": [
+                "term_60 months",
+                "gender_Male",
+                "purpose_House",
+                "purpose_Medical",
+                "purpose_Other",
+                "purpose_Personal",
+                "purpose_Wedding",
+                "home_ownership_Own",
+                "home_ownership_Rent",
+                "age_>25",
+                "FICO_>500"
+            ],
+            "pymiloed-ndarray-dtype": "object",
+            "pymiloed-ndarray-shape": [
+                11
+            ],
+            "pymiloed-data-structure": "numpy.ndarray"
+        },
+        "n_features_in_": 11,
+        "n_outputs_": 1,
+        "classes_": {
+            "pymiloed-ndarray-list": [
+                0,
+                1
+            ],
+            "pymiloed-ndarray-dtype": "int64",
+            "pymiloed-ndarray-shape": [
+                2
+            ],
+            "pymiloed-data-structure": "numpy.ndarray"
+        },
+        "n_classes_": {
+            "value": 2,
+            "np-type": "numpy.int64"
+        },
+        "max_features_": 11,
+        "tree_": {
+            "pymilo-bypass": true,
+            "pymilo-tree": {
+                "internal_state": {
+                    "max_depth": 2,
+                    "node_count": 7,
+                    "nodes": {
+                        "types": [
+                            "int64",
+                            "int64",
+                            "int64",
+                            "float64",
+                            "float64",
+                            "int64",
+                            "float64",
+                            "uint8"
+                        ],
+                        "field-names": [
+                            "left_child",
+                            "right_child",
+                            "feature",
+                            "threshold",
+                            "impurity",
+                            "n_node_samples",
+                            "weighted_n_node_samples",
+                            "missing_go_to_left"
+                        ],
+                        "values": [
+                            [
+                                1,
+                                4,
+                                10,
+                                0.5,
+                                0.4370612659276011,
+                                6928,
+                                6928.0,
+                                1
+                            ],
+                            [
+                                2,
+                                3,
+                                0,
+                                0.5,
+                                0.24521410337408645,
+                                3872,
+                                3872.0,
+                                1
+                            ],
+                            [
+                                -1,
+                                -1,
+                                -2,
+                                -2.0,
+                                0.1758079049352267,
+                                3676,
+                                3676.0,
+                                0
+                            ],
+                            [
+                                -1,
+                                -1,
+                                -2,
+                                -2.0,
+                                0.0,
+                                196,
+                                196.0,
+                                0
+                            ],
+                            [
+                                5,
+                                6,
+                                1,
+                                0.5,
+                                0.4949869024286615,
+                                3056,
+                                3056.0,
+                                0
+                            ],
+                            [
+                                -1,
+                                -1,
+                                -2,
+                                -2.0,
+                                0.35233308968182875,
+                                1358,
+                                1358.0,
+                                0
+                            ],
+                            [
+                                -1,
+                                -1,
+                                -2,
+                                -2.0,
+                                0.4676360049444992,
+                                1698,
+                                1698.0,
+                                0
+                            ]
+                        ]
+                    },
+                    "values": [
+                        [
+                            [
+                                0.3226039260969977,
+                                0.6773960739030023
+                            ]
+                        ],
+                        [
+                            [
+                                0.14307851239669422,
+                                0.8569214876033058
+                            ]
+                        ],
+                        [
+                            [
+                                0.09738846572361262,
+                                0.9026115342763874
+                            ]
+                        ],
+                        [
+                            [
+                                1.0,
+                                0.0
+                            ]
+                        ],
+                        [
+                            [
+                                0.550065445026178,
+                                0.449934554973822
+                            ]
+                        ],
+                        [
+                            [
+                                0.7717231222385862,
+                                0.22827687776141384
+                            ]
+                        ],
+                        [
+                            [
+                                0.37279151943462896,
+                                0.627208480565371
+                            ]
+                        ]
+                    ]
+                },
+                "n_features": 11,
+                "n_classes": [
+                    2
+                ],
+                "n_outputs": 1
+            }
+        }
+    },
+    "sklearn_version": "1.7.2",
+    "pymilo_version": "1.5",
+    "model_type": "DecisionTreeClassifier"
+}

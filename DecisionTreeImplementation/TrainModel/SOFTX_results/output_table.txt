@@ -1,0 +1,5 @@
+Parameters:
+FICO_>500	real		in	yes
+gender_Male	real		in	yes
+term_60	real		in	yes
+out	dint		out	yes
