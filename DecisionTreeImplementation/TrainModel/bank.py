@@ -37,23 +37,25 @@ def main():
 
     # f.check_performance(arbore, X_train, y_train, X_test, y_test)
     
-    # visualize_tree(arbore, X, "First version of the decission tree")
+    # f.visualize_tree(arbore, X, "First version of the decission tree")
 
     # 1. tuning using parameters (pre-pruning)
-    f.check_importances(arbore, X.columns)
+    # f.check_importances(arbore, X.columns)
     
-    estimator = f.choose_parameter(X_train, y_train)
+    # estimator = f.choose_parameter(X_train, y_train)
     
     # visualize_tree(estimator, X, "Pre-pruning tree")
 
     # f.check_performance(estimator, X_train, y_train, X_test, y_test)
 
-    f.visualize_tree(estimator, X, "Pre-pruning tree")
+    # f.visualize_tree(estimator, X, "Pre-pruning tree")
 
     # 2. cost complexity pruning
     pruning_arbore = f.pruning(X, X_train, y_train, X_test, y_test)
 
     f.visualize_tree(pruning_arbore, X, "Cost Complexity pruning")
+
+    f.check_performance(pruning_arbore, X_train, y_train, X_test, y_test)
 
     # f.model_comparisons(arbore, estimator, pruning_arbore, \
                     #   X_train, y_train, X_test, y_test)
@@ -66,18 +68,19 @@ def main():
     # print(feature_names)
     # print(pruning_arbore.feature_names_in_)
 
-    f.Export(pruning_arbore).save("export_model.json")
+    # f.Export(pruning_arbore).save("export_model.json")
     
     X_int = X_test.to_numpy()
     with open("X_test", "w") as file:
-        for i in range(1000):
-            int_list = list(map(int, X_int[i]))
-            file.write(''.join(map(str, int_list)))
+        for i in range(X_int.shape[0]):
+            # int_list = list(map(int, X_int[i]))
+            # file.write(''.join(map(str, int_list)))
+            file.write(str(list(map(int, X_int[i]))))
             file.write('\n')
 
     Y_int = y_test.to_numpy()      
     with open("Y_test", "w") as file:
-        for i in range(1000):
+        for i in range(Y_int.shape[0]):
             int_list = Y_int[i]
             file.write(str(int_list))
             file.write('\n')
