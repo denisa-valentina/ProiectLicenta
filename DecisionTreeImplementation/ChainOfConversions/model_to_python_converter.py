@@ -19,7 +19,5 @@ else:
     with open(output, "w") as file:
         file.write(model_to_python)
 
-    
-
 # ..\TrainModel\export_model
 # model_python
