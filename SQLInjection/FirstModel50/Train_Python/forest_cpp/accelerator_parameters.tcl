@@ -1,0 +1,10 @@
+set prj_name my_prj
+set part xczu7ev-ffvc1156-2-e
+set board_part xilinx.com:zcu104:part0:1.1
+set processing_system_ip xilinx.com:ip:zynq_ultra_ps_e:3.5
+set processing_system zynq_ultra_ps_e
+set ps_s_axi_port S_AXI_HP0_FPD
+set ps_m_axi_port M_AXI_HPM0_FPD
+set top my_prj_accelerator
+set ip_name conifer_my_prj
+set version 1.8
