@@ -1,0 +1,160 @@
+<ENTRY>
+{
+ "thisFile": "/home/denisaa/Desktop/Licenta_Denisa_2026/ProiectLicenta/SQLInjection/SecondModel25/IP_HLS/hls_component/my_prj_accelerator/my_prj_accelerator.hlsrun_csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Tue Jun 16 20:41:38 2026",
+ "timestampMillis": "1781631698942",
+ "buildStep": {
+  "cmdId": "8d24fab3-49d4-4a3d-9053-d054102407ee",
+  "name": "vitis-run",
+  "logFile": "/home/denisaa/Desktop/Licenta_Denisa_2026/ProiectLicenta/SQLInjection/SecondModel25/IP_HLS/hls_component/my_prj_accelerator/logs/my_prj_accelerator.steps.log",
+  "commandLine": "/tools/Xilinx/Vitis/2024.2/bin/unwrapped/lnx64.o/vitis-run  --mode hls --csim --config /home/denisaa/Desktop/Licenta_Denisa_2026/ProiectLicenta/SQLInjection/SecondModel25/IP_HLS/hls_component/hls_config.cfg --work_dir my_prj_accelerator ",
+  "args": [
+   "--mode",
+   "hls",
+   "--csim",
+   "--config",
+   "/home/denisaa/Desktop/Licenta_Denisa_2026/ProiectLicenta/SQLInjection/SecondModel25/IP_HLS/hls_component/hls_config.cfg",
+   "--work_dir",
+   "my_prj_accelerator"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/denisaa/Desktop/Licenta_Denisa_2026/ProiectLicenta/SQLInjection/SecondModel25/IP_HLS/hls_component"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Jun 16 20:41:38 2026",
+ "timestampMillis": "1781631698942",
+ "status": {
+  "cmdId": "8d24fab3-49d4-4a3d-9053-d054102407ee",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Tue Jun 16 20:41:41 2026",
+ "timestampMillis": "1781631701425",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "my_prj_accelerator",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/denisaa/Desktop/Licenta_Denisa_2026/ProiectLicenta/SQLInjection/SecondModel25/Train_Python/forest_cpp/firmware/BDT.cpp",
+     "/home/denisaa/Desktop/Licenta_Denisa_2026/ProiectLicenta/SQLInjection/SecondModel25/Train_Python/forest_cpp/firmware/BDT.h",
+     "/home/denisaa/Desktop/Licenta_Denisa_2026/ProiectLicenta/SQLInjection/SecondModel25/Train_Python/forest_cpp/firmware/my_prj.cpp",
+     "/home/denisaa/Desktop/Licenta_Denisa_2026/ProiectLicenta/SQLInjection/SecondModel25/Train_Python/forest_cpp/firmware/my_prj.h",
+     "/home/denisaa/Desktop/Licenta_Denisa_2026/ProiectLicenta/SQLInjection/SecondModel25/Train_Python/forest_cpp/firmware/parameters.h"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Tue Jun 16 20:41:41 2026",
+ "timestampMillis": "1781631701426",
+ "buildStep": {
+  "cmdId": "fabdebc0-ca9e-4716-ae5f-8c713891fc30",
+  "name": "",
+  "logFile": "/home/denisaa/Desktop/Licenta_Denisa_2026/ProiectLicenta/SQLInjection/SecondModel25/IP_HLS/hls_component/my_prj_accelerator/hls/hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/denisaa/Desktop/Licenta_Denisa_2026/ProiectLicenta/SQLInjection/SecondModel25/IP_HLS/hls_component"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Jun 16 20:41:41 2026",
+ "timestampMillis": "1781631701426",
+ "status": {
+  "cmdId": "fabdebc0-ca9e-4716-ae5f-8c713891fc30",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Jun 16 20:42:06 2026",
+ "timestampMillis": "1781631726232",
+ "status": {
+  "cmdId": "fabdebc0-ca9e-4716-ae5f-8c713891fc30",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Jun 16 20:42:06 2026",
+ "timestampMillis": "1781631726322",
+ "status": {
+  "cmdId": "8d24fab3-49d4-4a3d-9053-d054102407ee",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Jun 16 20:42:06 2026",
+ "timestampMillis": "1781631726323",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Jun 16 20:42:06 2026",
+ "timestampMillis": "1781631726323",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
