@@ -88,8 +88,6 @@ env/
 # =========================
 # Safety: huge generated folders
 # =========================
-SQLInjection/FirstModel50/VIVADO_XSA/
-SQLInjection/FirstModel50/VITIS_HW/
 SQLInjection/FirstModel50/HLS_IP/hls_component/**/sim/
 SQLInjection/FirstModel50/HLS_IP/hls_component/**/impl/
 SQLInjection/FirstModel50/HLS_IP/hls_component/**/csim/
