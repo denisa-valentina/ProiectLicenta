@@ -1,0 +1,3 @@
+relativeroot=/home/denisaa/Desktop/Licenta_Denisa_2026/ProiectLicenta/SQLInjection/FirstModel50/HLS_IP/hls_component
+original_argv=--mode hls --csim --config /home/denisaa/Desktop/Licenta_Denisa_2026/ProiectLicenta/SQLInjection/FirstModel50/HLS_IP/hls_component/hls_config.cfg --work_dir my_prj_accelerator 
+

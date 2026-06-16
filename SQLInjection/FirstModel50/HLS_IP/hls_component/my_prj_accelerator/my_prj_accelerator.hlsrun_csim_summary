@@ -1,0 +1,160 @@
+<ENTRY>
+{
+ "thisFile": "/home/denisaa/Desktop/Licenta_Denisa_2026/ProiectLicenta/SQLInjection/FirstModel50/HLS_IP/hls_component/my_prj_accelerator/my_prj_accelerator.hlsrun_csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Tue Jun 16 15:37:20 2026",
+ "timestampMillis": "1781613440276",
+ "buildStep": {
+  "cmdId": "42624104-29e5-4cfb-a7a9-a4e35aac47e0",
+  "name": "vitis-run",
+  "logFile": "/home/denisaa/Desktop/Licenta_Denisa_2026/ProiectLicenta/SQLInjection/FirstModel50/HLS_IP/hls_component/my_prj_accelerator/logs/my_prj_accelerator.steps.log",
+  "commandLine": "/tools/Xilinx/Vitis/2024.2/bin/unwrapped/lnx64.o/vitis-run  --mode hls --csim --config /home/denisaa/Desktop/Licenta_Denisa_2026/ProiectLicenta/SQLInjection/FirstModel50/HLS_IP/hls_component/hls_config.cfg --work_dir my_prj_accelerator ",
+  "args": [
+   "--mode",
+   "hls",
+   "--csim",
+   "--config",
+   "/home/denisaa/Desktop/Licenta_Denisa_2026/ProiectLicenta/SQLInjection/FirstModel50/HLS_IP/hls_component/hls_config.cfg",
+   "--work_dir",
+   "my_prj_accelerator"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/denisaa/Desktop/Licenta_Denisa_2026/ProiectLicenta/SQLInjection/FirstModel50/HLS_IP/hls_component"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Jun 16 15:37:20 2026",
+ "timestampMillis": "1781613440276",
+ "status": {
+  "cmdId": "42624104-29e5-4cfb-a7a9-a4e35aac47e0",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Tue Jun 16 15:37:22 2026",
+ "timestampMillis": "1781613442790",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "my_prj_accelerator",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/denisaa/Desktop/Licenta_Denisa_2026/ProiectLicenta/SQLInjection/FirstModel50/HLS_IP/BDT.cpp",
+     "/home/denisaa/Desktop/Licenta_Denisa_2026/ProiectLicenta/SQLInjection/FirstModel50/HLS_IP/BDT.h",
+     "/home/denisaa/Desktop/Licenta_Denisa_2026/ProiectLicenta/SQLInjection/FirstModel50/HLS_IP/my_prj.cpp",
+     "/home/denisaa/Desktop/Licenta_Denisa_2026/ProiectLicenta/SQLInjection/FirstModel50/HLS_IP/my_prj.h",
+     "/home/denisaa/Desktop/Licenta_Denisa_2026/ProiectLicenta/SQLInjection/FirstModel50/HLS_IP/parameters.h"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Tue Jun 16 15:37:22 2026",
+ "timestampMillis": "1781613442791",
+ "buildStep": {
+  "cmdId": "0f911714-51d3-4c6d-a2c8-77c40eb9e725",
+  "name": "",
+  "logFile": "/home/denisaa/Desktop/Licenta_Denisa_2026/ProiectLicenta/SQLInjection/FirstModel50/HLS_IP/hls_component/my_prj_accelerator/hls/hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/denisaa/Desktop/Licenta_Denisa_2026/ProiectLicenta/SQLInjection/FirstModel50/HLS_IP/hls_component"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Jun 16 15:37:22 2026",
+ "timestampMillis": "1781613442791",
+ "status": {
+  "cmdId": "0f911714-51d3-4c6d-a2c8-77c40eb9e725",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Jun 16 15:38:04 2026",
+ "timestampMillis": "1781613484666",
+ "status": {
+  "cmdId": "0f911714-51d3-4c6d-a2c8-77c40eb9e725",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Jun 16 15:38:04 2026",
+ "timestampMillis": "1781613484771",
+ "status": {
+  "cmdId": "42624104-29e5-4cfb-a7a9-a4e35aac47e0",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Jun 16 15:38:04 2026",
+ "timestampMillis": "1781613484771",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Jun 16 15:38:04 2026",
+ "timestampMillis": "1781613484771",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

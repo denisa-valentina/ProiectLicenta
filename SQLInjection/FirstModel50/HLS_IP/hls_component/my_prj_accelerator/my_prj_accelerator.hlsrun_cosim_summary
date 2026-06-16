@@ -1,0 +1,230 @@
+<ENTRY>
+{
+ "thisFile": "/home/denisaa/Desktop/BrokenModel/hls_component/my_prj_accelerator/my_prj_accelerator.hlsrun_cosim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Fri Jun 12 15:59:11 2026",
+ "timestampMillis": "1781269151707",
+ "buildStep": {
+  "cmdId": "92b9232b-ebfa-45ad-b5b0-ee21d2d20ae2",
+  "name": "vitis-run",
+  "logFile": "/home/denisaa/Desktop/BrokenModel/hls_component/my_prj_accelerator/logs/my_prj_accelerator.steps.log",
+  "commandLine": "/tools/Xilinx/Vitis/2024.2/bin/unwrapped/lnx64.o/vitis-run  --mode hls --cosim --config /home/denisaa/Desktop/BrokenModel/hls_component/hls_config.cfg --work_dir my_prj_accelerator ",
+  "args": [
+   "--mode",
+   "hls",
+   "--cosim",
+   "--config",
+   "/home/denisaa/Desktop/BrokenModel/hls_component/hls_config.cfg",
+   "--work_dir",
+   "my_prj_accelerator"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/denisaa/Desktop/BrokenModel/hls_component"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri Jun 12 15:59:11 2026",
+ "timestampMillis": "1781269151707",
+ "status": {
+  "cmdId": "92b9232b-ebfa-45ad-b5b0-ee21d2d20ae2",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Fri Jun 12 15:59:14 2026",
+ "timestampMillis": "1781269154304",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_RTL_COSIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "my_prj_accelerator",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/denisaa/Desktop/BrokenModel/BDT.cpp",
+     "/home/denisaa/Desktop/BrokenModel/BDT.h",
+     "/home/denisaa/Desktop/BrokenModel/my_prj.h",
+     "/home/denisaa/Desktop/BrokenModel/parameters.h",
+     "/home/denisaa/Desktop/BrokenModel/my_prj.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Fri Jun 12 15:59:14 2026",
+ "timestampMillis": "1781269154305",
+ "buildStep": {
+  "cmdId": "4783fd81-3580-4b90-b3af-797aa9978152",
+  "name": "",
+  "logFile": "/home/denisaa/Desktop/BrokenModel/hls_component/my_prj_accelerator/hls/hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/denisaa/Desktop/BrokenModel/hls_component"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri Jun 12 15:59:14 2026",
+ "timestampMillis": "1781269154305",
+ "status": {
+  "cmdId": "4783fd81-3580-4b90-b3af-797aa9978152",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Jun 12 15:59:14 2026",
+ "timestampMillis": "1781269154305",
+ "report": {
+  "path": "/home/denisaa/Desktop/BrokenModel/hls_component/my_prj_accelerator/hls/sim/report/my_prj_accelerator_cosim.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_COSIMULATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Jun 12 15:59:14 2026",
+ "timestampMillis": "1781269154305",
+ "report": {
+  "path": "/home/denisaa/Desktop/BrokenModel/hls_component/my_prj_accelerator/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_DATAFLOW",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Jun 12 15:59:14 2026",
+ "timestampMillis": "1781269154305",
+ "report": {
+  "path": "/home/denisaa/Desktop/BrokenModel/hls_component/my_prj_accelerator/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_FUNCTION_CALL_GRAPH_COSIM",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Jun 12 15:59:14 2026",
+ "timestampMillis": "1781269154305",
+ "report": {
+  "path": "/home/denisaa/Desktop/BrokenModel/hls_component/my_prj_accelerator/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_TIMELINE_TRACE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Jun 12 15:59:14 2026",
+ "timestampMillis": "1781269154305",
+ "report": {
+  "path": "/home/denisaa/Desktop/BrokenModel/hls_component/my_prj_accelerator/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_WAVE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri Jun 12 18:47:49 2026",
+ "timestampMillis": "1781279269354",
+ "status": {
+  "cmdId": "4783fd81-3580-4b90-b3af-797aa9978152",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri Jun 12 18:47:49 2026",
+ "timestampMillis": "1781279269466",
+ "status": {
+  "cmdId": "92b9232b-ebfa-45ad-b5b0-ee21d2d20ae2",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Jun 12 18:47:49 2026",
+ "timestampMillis": "1781279269467",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Jun 12 18:47:49 2026",
+ "timestampMillis": "1781279269467",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
