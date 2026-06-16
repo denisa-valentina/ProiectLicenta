@@ -1,0 +1,249 @@
+<ENTRY>
+{
+ "thisFile": "/home/denisaa/Desktop/AveMarie/Vitis_HLS/hls_component/hls_component/hls_component.hlscompile_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Mon Jun  8 21:37:18 2026",
+ "timestampMillis": "1780943838040",
+ "buildStep": {
+  "cmdId": "84def8c7-0f85-47b6-86cc-fef7c0458818",
+  "name": "v++",
+  "logFile": "/home/denisaa/Desktop/AveMarie/Vitis_HLS/hls_component/hls_component/logs/hls_component.steps.log",
+  "commandLine": "/tools/Xilinx/Vitis/2024.2/bin/unwrapped/lnx64.o/v++  -c --mode hls --config /home/denisaa/Desktop/AveMarie/Vitis_HLS/hls_component/hls_config.cfg --work_dir hls_component ",
+  "args": [
+   "-c",
+   "--mode",
+   "hls",
+   "--config",
+   "/home/denisaa/Desktop/AveMarie/Vitis_HLS/hls_component/hls_config.cfg",
+   "--work_dir",
+   "hls_component"
+  ],
+  "iniFiles": [
+   {
+    "path": "/home/denisaa/Desktop/AveMarie/Vitis_HLS/hls_component/hls_config.cfg",
+    "content": "part=xczu7ev-ffvc1156-2-e\n\n[hls]\nflow_target=vivado\npackage.output.format=ip_catalog\npackage.output.syn=false\nsyn.file=/home/denisaa/Desktop/AveMarie/FirstStep/forest_cpp/firmware/BDT.cpp\nsyn.file=/home/denisaa/Desktop/AveMarie/FirstStep/forest_cpp/firmware/BDT.h\nsyn.file=/home/denisaa/Desktop/AveMarie/FirstStep/forest_cpp/firmware/my_prj.cpp\nsyn.file=/home/denisaa/Desktop/AveMarie/FirstStep/forest_cpp/firmware/my_prj.h\nsyn.file=/home/denisaa/Desktop/AveMarie/FirstStep/forest_cpp/firmware/parameters.h\nsyn.top=my_prj_accelerator\ntb.file=/home/denisaa/Desktop/AveMarie/FirstStep/forest_cpp/my_prj_test.cpp\ntb.file=/home/denisaa/Desktop/AveMarie/FirstStep/forest_cpp/tb_data/tb_input_features.dat\ntb.file=/home/denisaa/Desktop/AveMarie/FirstStep/forest_cpp/tb_data\ntb.file=/home/denisaa/Desktop/AveMarie/FirstStep/forest_cpp/my_prj_test.cpp\ntb.file=/home/denisaa/Desktop/AveMarie/FirstStep/forest_cpp/tb_data\ncosim.wave_debug=1"
+   }
+  ],
+  "cwd": "/home/denisaa/Desktop/AveMarie/Vitis_HLS/hls_component"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Jun  8 21:37:18 2026",
+ "timestampMillis": "1780943838041",
+ "status": {
+  "cmdId": "84def8c7-0f85-47b6-86cc-fef7c0458818",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Mon Jun  8 21:37:20 2026",
+ "timestampMillis": "1780943840590",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_COMPILE",
+  "target": "TT_HW",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "my_prj_accelerator",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/denisaa/Desktop/AveMarie/FirstStep/forest_cpp/firmware/BDT.cpp",
+     "/home/denisaa/Desktop/AveMarie/FirstStep/forest_cpp/firmware/BDT.h",
+     "/home/denisaa/Desktop/AveMarie/FirstStep/forest_cpp/firmware/my_prj.cpp",
+     "/home/denisaa/Desktop/AveMarie/FirstStep/forest_cpp/firmware/my_prj.h",
+     "/home/denisaa/Desktop/AveMarie/FirstStep/forest_cpp/firmware/parameters.h"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon Jun  8 21:37:20 2026",
+ "timestampMillis": "1780943840591",
+ "buildStep": {
+  "cmdId": "8c69d029-3124-4838-a711-6978fcf63352",
+  "name": "",
+  "logFile": "/home/denisaa/Desktop/AveMarie/Vitis_HLS/hls_component/hls_component/hls/hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/denisaa/Desktop/AveMarie/Vitis_HLS/hls_component"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Jun  8 21:37:20 2026",
+ "timestampMillis": "1780943840591",
+ "status": {
+  "cmdId": "8c69d029-3124-4838-a711-6978fcf63352",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  8 21:37:20 2026",
+ "timestampMillis": "1780943840591",
+ "report": {
+  "path": "/home/denisaa/Desktop/AveMarie/Vitis_HLS/hls_component/hls_component/hls/hls_data.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  8 21:37:20 2026",
+ "timestampMillis": "1780943840591",
+ "report": {
+  "path": "/home/denisaa/Desktop/AveMarie/Vitis_HLS/hls_component/hls_component/hls/syn/report/csynth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  8 21:37:20 2026",
+ "timestampMillis": "1780943840591",
+ "report": {
+  "path": "/home/denisaa/Desktop/AveMarie/Vitis_HLS/hls_component/hls_component/hls/syn/report/csynth.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  8 21:41:35 2026",
+ "timestampMillis": "1780944095795",
+ "report": {
+  "path": "/home/denisaa/Desktop/AveMarie/Vitis_HLS/hls_component/hls_component/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_DATAFLOW",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  8 21:41:35 2026",
+ "timestampMillis": "1780944095795",
+ "report": {
+  "path": "/home/denisaa/Desktop/AveMarie/Vitis_HLS/hls_component/hls_component/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_FUNCTION_CALL_GRAPH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  8 21:41:35 2026",
+ "timestampMillis": "1780944095795",
+ "report": {
+  "path": "/home/denisaa/Desktop/AveMarie/Vitis_HLS/hls_component/hls_component/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_SCHEDULE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Jun  8 21:41:35 2026",
+ "timestampMillis": "1780944095796",
+ "status": {
+  "cmdId": "8c69d029-3124-4838-a711-6978fcf63352",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Jun  8 21:41:36 2026",
+ "timestampMillis": "1780944096079",
+ "status": {
+  "cmdId": "84def8c7-0f85-47b6-86cc-fef7c0458818",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  8 21:41:36 2026",
+ "timestampMillis": "1780944096111",
+ "report": {
+  "path": "/home/denisaa/Desktop/AveMarie/Vitis_HLS/hls_component/hls_component/reports/v++_compile_hls_component_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  8 21:41:36 2026",
+ "timestampMillis": "1780944096111",
+ "report": {
+  "path": "/home/denisaa/Desktop/AveMarie/Vitis_HLS/hls_component/hls_component/reports/.db/v++_compile_hls_component_guidance.pb3",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

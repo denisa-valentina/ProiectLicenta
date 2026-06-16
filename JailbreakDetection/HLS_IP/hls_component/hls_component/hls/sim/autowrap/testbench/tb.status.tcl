@@ -1,0 +1,1 @@
+set ::AESL_AUTOSIM::gTopFileName /home/denisaa/Desktop/AveMarie/Vitis_HLS/hls_component/hls_component/hls/./sim/autowrap/testbench/my_prj.cpp_pre.cpp.tb.cpp

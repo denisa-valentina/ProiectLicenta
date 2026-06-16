@@ -1,0 +1,3 @@
+/home/denisaa/Desktop/AveMarie/Vitis_After/platform/zynqmp_fsbl/build/CMakeFiles/fsbl.elf.dir
+/home/denisaa/Desktop/AveMarie/Vitis_After/platform/zynqmp_fsbl/build/CMakeFiles/edit_cache.dir
+/home/denisaa/Desktop/AveMarie/Vitis_After/platform/zynqmp_fsbl/build/CMakeFiles/rebuild_cache.dir

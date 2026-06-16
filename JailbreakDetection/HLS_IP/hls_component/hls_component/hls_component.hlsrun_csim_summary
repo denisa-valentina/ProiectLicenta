@@ -1,0 +1,160 @@
+<ENTRY>
+{
+ "thisFile": "/home/denisaa/Desktop/AveMarie/Vitis_HLS/hls_component/hls_component/hls_component.hlsrun_csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Mon Jun  8 21:36:42 2026",
+ "timestampMillis": "1780943802663",
+ "buildStep": {
+  "cmdId": "44f77927-34f4-4b94-b224-9d01a38e296b",
+  "name": "vitis-run",
+  "logFile": "/home/denisaa/Desktop/AveMarie/Vitis_HLS/hls_component/hls_component/logs/hls_component.steps.log",
+  "commandLine": "/tools/Xilinx/Vitis/2024.2/bin/unwrapped/lnx64.o/vitis-run  --mode hls --csim --config /home/denisaa/Desktop/AveMarie/Vitis_HLS/hls_component/hls_config.cfg --work_dir hls_component ",
+  "args": [
+   "--mode",
+   "hls",
+   "--csim",
+   "--config",
+   "/home/denisaa/Desktop/AveMarie/Vitis_HLS/hls_component/hls_config.cfg",
+   "--work_dir",
+   "hls_component"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/denisaa/Desktop/AveMarie/Vitis_HLS/hls_component"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Jun  8 21:36:42 2026",
+ "timestampMillis": "1780943802663",
+ "status": {
+  "cmdId": "44f77927-34f4-4b94-b224-9d01a38e296b",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Mon Jun  8 21:36:45 2026",
+ "timestampMillis": "1780943805173",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "my_prj_accelerator",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/denisaa/Desktop/AveMarie/FirstStep/forest_cpp/firmware/BDT.cpp",
+     "/home/denisaa/Desktop/AveMarie/FirstStep/forest_cpp/firmware/BDT.h",
+     "/home/denisaa/Desktop/AveMarie/FirstStep/forest_cpp/firmware/my_prj.cpp",
+     "/home/denisaa/Desktop/AveMarie/FirstStep/forest_cpp/firmware/my_prj.h",
+     "/home/denisaa/Desktop/AveMarie/FirstStep/forest_cpp/firmware/parameters.h"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon Jun  8 21:36:45 2026",
+ "timestampMillis": "1780943805173",
+ "buildStep": {
+  "cmdId": "dedcfee4-3781-4b3a-99fe-dcc52b165b7d",
+  "name": "",
+  "logFile": "/home/denisaa/Desktop/AveMarie/Vitis_HLS/hls_component/hls_component/hls/hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/denisaa/Desktop/AveMarie/Vitis_HLS/hls_component"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Jun  8 21:36:45 2026",
+ "timestampMillis": "1780943805174",
+ "status": {
+  "cmdId": "dedcfee4-3781-4b3a-99fe-dcc52b165b7d",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Jun  8 21:37:12 2026",
+ "timestampMillis": "1780943832335",
+ "status": {
+  "cmdId": "dedcfee4-3781-4b3a-99fe-dcc52b165b7d",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Jun  8 21:37:12 2026",
+ "timestampMillis": "1780943832445",
+ "status": {
+  "cmdId": "44f77927-34f4-4b94-b224-9d01a38e296b",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  8 21:37:12 2026",
+ "timestampMillis": "1780943832445",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  8 21:37:12 2026",
+ "timestampMillis": "1780943832446",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
