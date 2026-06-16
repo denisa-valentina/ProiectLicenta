@@ -1,3 +1,97 @@
-*.zip
+# =========================
+# Python (generic)
+# =========================
 *.pyc
 __pycache__/
+env/
+*.log
+
+# =========================
+# Archives / dumps
+# =========================
+*.tar
+*.gz
+
+# =========================
+# Vivado / Vitis / Xilinx
+# =========================
+
+# General build outputs
+*.jou
+*.str
+*.pb
+*.wdb
+*.wlf
+*.sim
+*.cache
+*.hw
+*.ip_user_files/
+*.Xil/
+*.ipcache/
+
+# Vivado project builds
+*.runs/
+*.srcs/
+*.gen/
+*.hw_emu/
+*.sw_emu/
+*.xpr.cache/
+*.xpr.hw/
+*.xpr.sim/
+
+# Bitstreams / hardware outputs
+*.bit
+*.ltx
+*.mmi
+*.bin
+*.hdf
+*.xsa
+
+# Reports / logs (Vivado/Vitis heavy outputs)
+*.rpt
+*.xml
+*.html
+*.map
+*.usage
+*.xdebug
+
+# Vivado HLS / Vitis HLS / Vitis AI builds
+*.autopilot/
+*.prj/
+*.log
+*.dat
+*.tcl.log
+*.tcl.jou
+
+# Simulation / HLS internal folders
+*.sim/
+*.csim/
+*.csynth/
+*.syn/
+*.impl/
+*.tbgen/
+*.ref/
+
+# Vitis / XRT / runtime artifacts
+*.run/
+*.launch/
+*.profile
+*.summary
+
+# =========================
+# IDE / OS
+# =========================
+.vscode/
+.idea/
+.DS_Store
+
+# =========================
+# Safety: huge generated folders
+# =========================
+SQLInjection/FirstModel50/VIVADO_XSA/
+SQLInjection/FirstModel50/VITIS_HW/
+SQLInjection/FirstModel50/HLS_IP/hls_component/**/sim/
+SQLInjection/FirstModel50/HLS_IP/hls_component/**/impl/
+SQLInjection/FirstModel50/HLS_IP/hls_component/**/csim/
+SQLInjection/FirstModel50/HLS_IP/hls_component/**/csynth/
+SQLInjection/FirstModel50/HLS_IP/hls_component/**/.autopilot/
