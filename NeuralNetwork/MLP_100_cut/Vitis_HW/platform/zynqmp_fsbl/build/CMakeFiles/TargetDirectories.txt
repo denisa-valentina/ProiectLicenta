@@ -1,0 +1,3 @@
+/home/denisaa/Desktop/NeuralNetwork/MLP_100_cut/Vitis_HW/platform/zynqmp_fsbl/build/CMakeFiles/fsbl.elf.dir
+/home/denisaa/Desktop/NeuralNetwork/MLP_100_cut/Vitis_HW/platform/zynqmp_fsbl/build/CMakeFiles/edit_cache.dir
+/home/denisaa/Desktop/NeuralNetwork/MLP_100_cut/Vitis_HW/platform/zynqmp_fsbl/build/CMakeFiles/rebuild_cache.dir

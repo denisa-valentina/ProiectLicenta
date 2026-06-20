@@ -1,0 +1,59 @@
+{
+	"version": "1.0",
+	"modules": {
+		"myproject": {
+			"proto_instances": {
+				"/AESL_inst_myproject_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst_n"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_dense_latency_ap_fixed_32_18_5_3_0_ap_fixed_32_18_5_3_0_config2_s_fu_52/grp_dense_latency_ap_fixed_32_18_5_3_0_ap_fixed_32_18_5_3_0_config2_s_fu_52_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_dense_latency_ap_fixed_32_18_5_3_0_ap_fixed_32_18_5_3_0_config5_s_fu_224/grp_dense_latency_ap_fixed_32_18_5_3_0_ap_fixed_32_18_5_3_0_config5_s_fu_224_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_dense_latency_ap_fixed_32_18_5_3_0_ap_fixed_32_18_5_3_0_config8_s_fu_328/grp_dense_latency_ap_fixed_32_18_5_3_0_ap_fixed_32_18_5_3_0_config8_s_fu_328_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_sigmoid_ap_fixed_32_18_5_3_0_ap_fixed_32_18_5_3_0_sigmoid_config9_s_fu_364/grp_sigmoid_ap_fixed_32_18_5_3_0_ap_fixed_32_18_5_3_0_sigmoid_config9_s_fu_364_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				}
+			}
+		}
+	}
+}

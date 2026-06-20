@@ -1,0 +1,140 @@
+Model: "sequential"
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━┓
+┃ Layer (type)                         ┃ Output Shape                ┃         Param # ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━┩
+│ dense (Dense)                        │ (None, 12)                  │           1,212 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ dropout (Dropout)                    │ (None, 12)                  │               0 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ dense_1 (Dense)                      │ (None, 6)                   │              78 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ dropout_1 (Dropout)                  │ (None, 6)                   │               0 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ dense_2 (Dense)                      │ (None, 1)                   │               7 │
+└──────────────────────────────────────┴─────────────────────────────┴─────────────────┘
+ Total params: 1,297 (5.07 KB)
+ Trainable params: 1,297 (5.07 KB)
+ Non-trainable params: 0 (0.00 B)
+ 
+ Model: "sequential"
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━┓
+┃ Layer (type)                         ┃ Output Shape                ┃         Param # ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━┩
+│ dense (Dense)                        │ (None, 8)                   │             808 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ dense_1 (Dense)                      │ (None, 1)                   │               9 │
+└──────────────────────────────────────┴─────────────────────────────┴─────────────────┘
+ Total params: 817 (3.19 KB)
+ Trainable params: 817 (3.19 KB)
+ Non-trainable params: 0 (0.00 B)
+ 
+PyTorch Classifier - Accuracy (Test): 0.8405, Precision: 0.8104, Recall: 0.8755, F1: 0.8417
+ 
+ --- Macro-Average (all 1 classes) ---
+   Accuracy  = 0.8463
+   Precision = 0.8295
+   Recall    = 0.8594
+   F1 Score  = 0.8442
+   
+   
+% ----------------------------------------------------------
+   
+The solution:
+
+Model: "sequential"
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━┓
+┃ Layer (type)                         ┃ Output Shape                ┃         Param # ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━┩
+│ dense (Dense)                        │ (None, 8)                   │             808 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ dense_1 (Dense)                      │ (None, 1)                   │               9 │
+└──────────────────────────────────────┴─────────────────────────────┴─────────────────┘
+ Total params: 1,636 (6.39 KB)
+ Trainable params: 817 (3.19 KB)
+ Non-trainable params: 0 (0.00 B)
+ Optimizer params: 819 (3.20 KB)
+None
+PyTorch Classifier - Accuracy (Test): 0.8405, Precision: 0.8104, Recall: 0.8755, F1: 0.8417
+
+ --- Macro-Average (all 1 classes) ---
+   Accuracy  = 0.8405
+   Precision = 0.8104
+   Recall    = 0.8755
+   F1 Score  = 0.8417
+   
+   
+   
+=== RF Accelerator - ZCU104 ===
+DMA initialized
+Accelerator initialized
+UART initialized
+
+--- Phase 1: Single vector test ---
+Running inference on 1 vectors...
+Number of ticks: 684
+Number of ticks per vector: 684
+Inference time: 6 us / 6840 ns
+Per vector:     6840 ns
+Prediction: 1
+Phase 1 PASSED
+
+--- Phase 2: Full dataset ---
+Loading 514 vectors...
+Vectors loaded
+Running inference on 514 vectors...
+Number of ticks: 58985
+Number of ticks per vector: 114
+Inference time: 589 us / 589850 ns
+Per vector:     1147 ns
+
+========== METRICS ==========
+Vectors : 514
+TP=218  FP=51  TN=214  FN=31
+==============================   
+   
+Raw score : 0.84375 METRICS 0.84046 0.81040 0.87550 0.84169
+
+- C BARE METAL MODEL 
+
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ dense (Dense)               (None, 8)                 808       
+                                                                 
+ dense_1 (Dense)             (None, 1)                 9         
+                                                                 
+=================================================================
+Total params: 817 (3.19 KB)
+Trainable params: 817 (3.19 KB)
+Non-trainable params: 0 (0.00 Byte)
+_________________________________________________________________
+Num layers: 2
+
+=== RF Software - ZCU104 ===
+UART initialized
+
+--- Phase 1: Single vector test ---
+Freq: 100000000
+Number of ticks: 4712
+Inference time: 47 us / 47120 ns
+Prediction: 1
+Phase 1 PASSED
+
+--- Phase 2: Full dataset ---
+Running inference on 514 vectors...
+Freq: 100000000
+Number of ticks: 2092118
+Number of ticks per vector: 4070
+Inference time: 20921 us / 20921180 ns
+Inference time per vector: 40702 ns
+
+========== METRICS ==========
+Vectors : 514
+TP=218  FP=51  TN=214  FN=31
+==============================
+Phase 2 PASSED
+
+Raw score : 0.84403
+METRICS 0.84046 0.81040 0.87550 0.84169
+

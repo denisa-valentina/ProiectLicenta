@@ -1,0 +1,26 @@
+Backend: Vivado
+ClockPeriod: 5
+ClockUncertainty: 12.5%
+HLSConfig:
+  Model:
+    Precision: ap_fixed<16,6>
+    ReuseFactor: 1
+IOType: io_parallel
+InputShapes:
+  input_1:
+  - 16
+KerasH5: KERAS_3layer_weights.h5
+KerasJson: KERAS_3layer.json
+OutputDir: my-hls-test
+OutputShapes:
+  layer9_out:
+  - 5
+Part: xcvu13p-flga2577-2-e
+ProjectName: myproject
+Stamp: 80c17957
+Version: 1.0.0
+WriterConfig:
+  Namespace: null
+  TBOutputStream: both
+  WriteTar: false
+  WriteWeightsTxt: true

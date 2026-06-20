@@ -1,0 +1,159 @@
+<ENTRY>
+{
+ "thisFile": "/home/denisaa/Desktop/NeuralNetwork/MLP_100_cut/Vitis_HLS/hls_component/my_prj_accelerator/my_prj_accelerator.hlsrun_csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Fri Jun 19 17:42:09 2026",
+ "timestampMillis": "1781880129395",
+ "buildStep": {
+  "cmdId": "9090f8b1-c59b-4db0-bf96-4eb521a20714",
+  "name": "vitis-run",
+  "logFile": "/home/denisaa/Desktop/NeuralNetwork/MLP_100_cut/Vitis_HLS/hls_component/my_prj_accelerator/logs/my_prj_accelerator.steps.log",
+  "commandLine": "/tools/Xilinx/Vitis/2024.2/bin/unwrapped/lnx64.o/vitis-run  --mode hls --csim --config /home/denisaa/Desktop/NeuralNetwork/MLP_100_cut/Vitis_HLS/hls_component/hls_config.cfg --work_dir my_prj_accelerator ",
+  "args": [
+   "--mode",
+   "hls",
+   "--csim",
+   "--config",
+   "/home/denisaa/Desktop/NeuralNetwork/MLP_100_cut/Vitis_HLS/hls_component/hls_config.cfg",
+   "--work_dir",
+   "my_prj_accelerator"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/denisaa/Desktop/NeuralNetwork/MLP_100_cut/Vitis_HLS/hls_component"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri Jun 19 17:42:09 2026",
+ "timestampMillis": "1781880129395",
+ "status": {
+  "cmdId": "9090f8b1-c59b-4db0-bf96-4eb521a20714",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Fri Jun 19 17:42:11 2026",
+ "timestampMillis": "1781880131952",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "my_prj_accelerator",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/denisaa/Desktop/NeuralNetwork/MLP_100_cut/Python/my-hls-test/firmware/defines.h",
+     "/home/denisaa/Desktop/NeuralNetwork/MLP_100_cut/Python/my-hls-test/firmware/myproject.cpp",
+     "/home/denisaa/Desktop/NeuralNetwork/MLP_100_cut/Python/my-hls-test/firmware/myproject.h",
+     "/home/denisaa/Desktop/NeuralNetwork/MLP_100_cut/Python/my-hls-test/firmware/parameters.h"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Fri Jun 19 17:42:11 2026",
+ "timestampMillis": "1781880131953",
+ "buildStep": {
+  "cmdId": "b8486339-cf8a-4b7d-90cc-adadadd72790",
+  "name": "",
+  "logFile": "/home/denisaa/Desktop/NeuralNetwork/MLP_100_cut/Vitis_HLS/hls_component/my_prj_accelerator/hls/hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/denisaa/Desktop/NeuralNetwork/MLP_100_cut/Vitis_HLS/hls_component"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri Jun 19 17:42:11 2026",
+ "timestampMillis": "1781880131953",
+ "status": {
+  "cmdId": "b8486339-cf8a-4b7d-90cc-adadadd72790",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri Jun 19 17:42:14 2026",
+ "timestampMillis": "1781880134421",
+ "status": {
+  "cmdId": "b8486339-cf8a-4b7d-90cc-adadadd72790",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri Jun 19 17:42:14 2026",
+ "timestampMillis": "1781880134523",
+ "status": {
+  "cmdId": "9090f8b1-c59b-4db0-bf96-4eb521a20714",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Jun 19 17:42:14 2026",
+ "timestampMillis": "1781880134524",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Jun 19 17:42:14 2026",
+ "timestampMillis": "1781880134524",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

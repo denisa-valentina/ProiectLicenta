@@ -1,0 +1,159 @@
+<ENTRY>
+{
+ "thisFile": "/home/denisaa/Desktop/NeuralNetwork/MLP/Vitis_HLS/hls_component/hls_component/hls_component.hlsrun_csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Thu Jun 18 19:52:27 2026",
+ "timestampMillis": "1781801547354",
+ "buildStep": {
+  "cmdId": "fa8ca0d5-5eb2-49ee-9c72-0e941d7cda17",
+  "name": "vitis-run",
+  "logFile": "/home/denisaa/Desktop/NeuralNetwork/MLP/Vitis_HLS/hls_component/hls_component/logs/hls_component.steps.log",
+  "commandLine": "/tools/Xilinx/Vitis/2024.2/bin/unwrapped/lnx64.o/vitis-run  --mode hls --csim --config /home/denisaa/Desktop/NeuralNetwork/MLP/Vitis_HLS/hls_component/hls_config.cfg --work_dir hls_component ",
+  "args": [
+   "--mode",
+   "hls",
+   "--csim",
+   "--config",
+   "/home/denisaa/Desktop/NeuralNetwork/MLP/Vitis_HLS/hls_component/hls_config.cfg",
+   "--work_dir",
+   "hls_component"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/denisaa/Desktop/NeuralNetwork/MLP/Vitis_HLS/hls_component"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jun 18 19:52:27 2026",
+ "timestampMillis": "1781801547354",
+ "status": {
+  "cmdId": "fa8ca0d5-5eb2-49ee-9c72-0e941d7cda17",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Thu Jun 18 19:52:29 2026",
+ "timestampMillis": "1781801549862",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "myproject",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/denisaa/Desktop/NeuralNetwork/MLP/Python/my-hls-test/firmware/defines.h",
+     "/home/denisaa/Desktop/NeuralNetwork/MLP/Python/my-hls-test/firmware/myproject.cpp",
+     "/home/denisaa/Desktop/NeuralNetwork/MLP/Python/my-hls-test/firmware/myproject.h",
+     "/home/denisaa/Desktop/NeuralNetwork/MLP/Python/my-hls-test/firmware/parameters.h"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Thu Jun 18 19:52:29 2026",
+ "timestampMillis": "1781801549863",
+ "buildStep": {
+  "cmdId": "6798ec38-947d-41ac-ae65-7d410f463e5f",
+  "name": "",
+  "logFile": "/home/denisaa/Desktop/NeuralNetwork/MLP/Vitis_HLS/hls_component/hls_component/hls/hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/denisaa/Desktop/NeuralNetwork/MLP/Vitis_HLS/hls_component"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jun 18 19:52:29 2026",
+ "timestampMillis": "1781801549863",
+ "status": {
+  "cmdId": "6798ec38-947d-41ac-ae65-7d410f463e5f",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jun 18 19:52:32 2026",
+ "timestampMillis": "1781801552218",
+ "status": {
+  "cmdId": "6798ec38-947d-41ac-ae65-7d410f463e5f",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jun 18 19:52:32 2026",
+ "timestampMillis": "1781801552304",
+ "status": {
+  "cmdId": "fa8ca0d5-5eb2-49ee-9c72-0e941d7cda17",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Jun 18 19:52:32 2026",
+ "timestampMillis": "1781801552305",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Jun 18 19:52:32 2026",
+ "timestampMillis": "1781801552305",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
