@@ -27,6 +27,7 @@ wire prediction;
 reg [10:0] inputData [0:4619];
 reg realOutput [0:4619];
 integer k, i, TP, TN, FP, FN;
+real acc, prec, rec, f1;
 
 calculate_score dut(
     features,
@@ -65,10 +66,19 @@ begin
                 FN = FN + 1;
         endcase
     end
+    
      $display("FN = %d", FN); //    FN =         228
      $display("FP = %d", FP); //    FP =         705
      $display("TN = %d", TN); //    TN =         887
      $display("TP = %d", TP); //    TP =        2800
+     acc = 1.0 * (TP+TN)/(TP + TN + FP + FN);
+     prec = 1.0 * TP/(TP+FP);
+     rec = 1.0 * TP/(TP+FN);
+     f1 = 2.0 * rec * prec / (rec + prec);
+     $display("Accuracy = %f", acc);
+     $display("Precision = %f", prec);
+     $display("Recall = %f", rec);
+     $display("F1 = %f", f1); 
      $display("Total = %d", TP+TN+FP+FN);
      $finish;
 end

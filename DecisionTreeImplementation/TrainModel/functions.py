@@ -189,6 +189,8 @@ def model_performance_classification_sklearn(model, predictor, target):
     precision = precision_score(target, pred) # to compute Precision
     f1 = f1_score(target, pred) # to compute F1-score
 
+    print(str(acc) + " " + str(precision) + " " + str(recall) + " " + str(f1))
+
     # creating a dataframe of metrics
     df_perf = pd.DataFrame(
         {

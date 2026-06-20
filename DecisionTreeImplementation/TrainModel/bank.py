@@ -1,4 +1,5 @@
 import functions as f
+import pickle
 
 def main():
 
@@ -67,6 +68,15 @@ def main():
     # print(pruning_arbore.feature_names_in_)
 
     f.Export(pruning_arbore).save("export_model.json")
+
+    with open("model.pkl", "wb") as file:
+        pickle.dump(pruning_arbore, file)
+
+    with open("x_test.pkl", "wb") as file:
+        pickle.dump(X_test, file)
+
+    with open("y_test.pkl", "wb") as file:
+        pickle.dump(y_test, file)
     
     X_int = X_test.to_numpy()
     with open("X_test", "w") as file:
