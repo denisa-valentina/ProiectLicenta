@@ -156,10 +156,9 @@ static int init_uart(void) {
  * Core inference
  * ============================================================
  */
-static int run_inference(int n_vectors) {
-    u32 tx_size; // = n_vectors * N_FEATURES * sizeof(float);
-    u32 rx_size; // = n_vectors * sizeof(float);
-    int i;
+ static int run_inference(int n_vectors) {
+    u32 tx_size = n_vectors * N_FEATURES * sizeof(float);
+    u32 rx_size = n_vectors * sizeof(float);
 
     xil_printf("Running inference on %d vectors...\r\n", n_vectors);
 
@@ -169,30 +168,21 @@ static int run_inference(int n_vectors) {
     u64 freq  = get_timer_freq();
     u64 start = read_cycle_counter();
 
-    for(i = 0; i < n_vectors; i = i + CHUNK_SIZE_NB_VEC) 
-    {
-        u32 current_chunk = (i + CHUNK_SIZE_NB_VEC < n_vectors) ? CHUNK_SIZE_NB_VEC : (n_vectors - i);
-        tx_size = current_chunk * N_FEATURES * sizeof(float);
-        rx_size = current_chunk * sizeof(float);
-        
-        // XMy_prj_accelerator_Set_N(&Accel, n_vectors);
-        
-        XMy_prj_accelerator_Set_N(&Accel, current_chunk);
-        Xil_DCacheFlushRange(TX_BUFFER_BASE + i * N_FEATURES * sizeof(float), tx_size);
-        Xil_DCacheFlushRange(RX_BUFFER_BASE + i * sizeof(float), rx_size);
+    XMy_prj_accelerator_Set_N(&Accel, n_vectors);
+    Xil_DCacheFlushRange(TX_BUFFER_BASE, tx_size);
+    Xil_DCacheFlushRange(RX_BUFFER_BASE, rx_size);
+    XMy_prj_accelerator_Start(&Accel);
 
-        XAxiDma_SimpleTransfer(&AxiDma, (UINTPTR)(RX_BUFFER_BASE + i * sizeof(float)),
-            rx_size, XAXIDMA_DEVICE_TO_DMA);
-        XAxiDma_SimpleTransfer(&AxiDma, (UINTPTR)(TX_BUFFER_BASE + i * N_FEATURES * sizeof(float)),
-            tx_size, XAXIDMA_DMA_TO_DEVICE);
-        XMy_prj_accelerator_Start(&Accel);
+    XAxiDma_SimpleTransfer(&AxiDma, (UINTPTR)RX_BUFFER_BASE,
+        rx_size, XAXIDMA_DEVICE_TO_DMA);
+    XAxiDma_SimpleTransfer(&AxiDma, (UINTPTR)TX_BUFFER_BASE,
+        tx_size, XAXIDMA_DMA_TO_DEVICE);
 
-        while (XAxiDma_Busy(&AxiDma, XAXIDMA_DMA_TO_DEVICE));
-        while (!XMy_prj_accelerator_IsDone(&Accel));
-        while (XAxiDma_Busy(&AxiDma, XAXIDMA_DEVICE_TO_DMA));
+    while (XAxiDma_Busy(&AxiDma, XAXIDMA_DMA_TO_DEVICE));
+    while (!XMy_prj_accelerator_IsDone(&Accel));
+    while (XAxiDma_Busy(&AxiDma, XAXIDMA_DEVICE_TO_DMA));
 
-        Xil_DCacheInvalidateRange(RX_BUFFER_BASE + i * sizeof(float), rx_size);
-    }
+    Xil_DCacheInvalidateRange(RX_BUFFER_BASE, rx_size);
 
     u64 end   = read_cycle_counter();
     u64 ticks = end - start;
@@ -206,6 +196,56 @@ static int run_inference(int n_vectors) {
 
     return XST_SUCCESS;
 }
+// static int run_inference(int n_vectors) {
+//     u32 tx_size; // = n_vectors * N_FEATURES * sizeof(float);
+//     u32 rx_size; // = n_vectors * sizeof(float);
+//     int i;
+
+//     xil_printf("Running inference on %d vectors...\r\n", n_vectors);
+
+//     XAxiDma_Reset(&AxiDma);
+//     while (!XAxiDma_ResetIsDone(&AxiDma));
+
+//     u64 freq  = get_timer_freq();
+//     u64 start = read_cycle_counter();
+
+//     for(i = 0; i < n_vectors; i = i + CHUNK_SIZE_NB_VEC) 
+//     {
+//         u32 current_chunk = (i + CHUNK_SIZE_NB_VEC < n_vectors) ? CHUNK_SIZE_NB_VEC : (n_vectors - i);
+//         tx_size = current_chunk * N_FEATURES * sizeof(float);
+//         rx_size = current_chunk * sizeof(float);
+        
+//         // XMy_prj_accelerator_Set_N(&Accel, n_vectors);
+        
+//         XMy_prj_accelerator_Set_N(&Accel, current_chunk);
+//         Xil_DCacheFlushRange(TX_BUFFER_BASE + i * N_FEATURES * sizeof(float), tx_size);
+//         Xil_DCacheFlushRange(RX_BUFFER_BASE + i * sizeof(float), rx_size);
+
+//         XAxiDma_SimpleTransfer(&AxiDma, (UINTPTR)(RX_BUFFER_BASE + i * sizeof(float)),
+//             rx_size, XAXIDMA_DEVICE_TO_DMA);
+//         XAxiDma_SimpleTransfer(&AxiDma, (UINTPTR)(TX_BUFFER_BASE + i * N_FEATURES * sizeof(float)),
+//             tx_size, XAXIDMA_DMA_TO_DEVICE);
+//         XMy_prj_accelerator_Start(&Accel);
+
+//         while (XAxiDma_Busy(&AxiDma, XAXIDMA_DMA_TO_DEVICE));
+//         while (!XMy_prj_accelerator_IsDone(&Accel));
+//         while (XAxiDma_Busy(&AxiDma, XAXIDMA_DEVICE_TO_DMA));
+
+//         Xil_DCacheInvalidateRange(RX_BUFFER_BASE + i * sizeof(float), rx_size);
+//     }
+
+//     u64 end   = read_cycle_counter();
+//     u64 ticks = end - start;
+//     u64 ns    = ticks * 1000000000ULL / freq;
+//     u32 us    = (u32)(ticks * 1000000ULL / freq);
+
+//     xil_printf("Number of ticks: %llu\r\n", ticks);
+//     xil_printf("Number of ticks per vector: %llu\r\n", ticks / n_vectors);
+//     xil_printf("Inference time: %d us / %llu ns\r\n", us, ns);
+//     xil_printf("Per vector:     %llu ns\r\n", ns / n_vectors);
+
+//     return XST_SUCCESS;
+// }
 
 /*
  * ============================================================
@@ -340,11 +380,11 @@ int main(void) {
     if (init_accel() != XST_SUCCESS) return XST_FAILURE;
     if (init_uart()  != XST_SUCCESS) return XST_FAILURE;
 
-    // if (phase1_single_vector() != XST_SUCCESS) {
-    //     xil_printf("Phase 1 FAILED\r\n");
-    //     return XST_FAILURE;
-    // }
-    // xil_printf("Phase 1 PASSED\r\n");
+    if (phase1_single_vector() != XST_SUCCESS) {
+        xil_printf("Phase 1 FAILED\r\n");
+        return XST_FAILURE;
+    }
+    xil_printf("Phase 1 PASSED\r\n");
 
     if (phase2_full_dataset() != XST_SUCCESS) {
         xil_printf("Phase 2 FAILED\r\n");

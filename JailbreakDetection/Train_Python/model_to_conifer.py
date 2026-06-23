@@ -3,7 +3,21 @@ from pymilo import Import
 import pickle
 import os
 import json
-import m2cgen as m2c
+import pandas as pd
+# from fxpmath import Fxp
+from sklearn.model_selection import train_test_split
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.metrics import accuracy_score, classification_report
+from sklearn.metrics import (
+    f1_score,
+    accuracy_score,
+    recall_score,
+    precision_score,
+    confusion_matrix,
+    ConfusionMatrixDisplay,
+    make_scorer,
+)
 import numpy as np
 import datetime
 import logging
@@ -13,12 +27,48 @@ logging.basicConfig(stream=sys.stdout, level=logging.WARNING)
 logger = logging.getLogger('conifer')
 logger.setLevel(logging.DEBUG)
 
+def model_performance_classification_sklearn(model, predictor, target):
+    """
+    Function to compute different metrics to check classification model performance
+
+    model: classifier
+    predictors: independent variables
+    target: dependent variable
+    """
+
+    # predicting using the independent variables
+    pred = model.predict(predictor)
+
+    acc = accuracy_score(target, pred) # to compune Accuracy
+    recall = recall_score(target, pred) # to compute Recall
+    precision = precision_score(target, pred) # to compute Precision
+    f1 = f1_score(target, pred) # to compute F1-score
+
+    # creating a dataframe of metrics
+    df_perf = pd.DataFrame(
+        {
+            "Accuracy": acc,
+            "Recall" : recall,
+            "Precision" : precision,
+            "F1 score": f1,
+        },
+        index=[0],
+    )
+
+    return df_perf
+
 model = Import("random_forest.json").to_model()
 
-code = m2c.export_to_c(model)
+with open("X_test.pkl", "rb") as file:
+    X_test = pickle.load(file)
 
-with open("output.h", "w") as f:
-    f.write(code)
+x_test = X_test.toarray()
+
+with open("y_test.pkl", "rb") as file:
+    y_test = pickle.load(file)
+
+print("Test metrics: ")
+print(model_performance_classification_sklearn(model, X_test, y_test))
 
 # config = conifer.backends.xilinxhls.auto_config()
 

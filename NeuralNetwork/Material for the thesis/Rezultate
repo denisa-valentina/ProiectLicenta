@@ -1,0 +1,27 @@
+
+
+================================ RESURSE ================================
+
+Model			Strat 1 dim. 	Strat 2 dim. 	Prec. numere	DSP	LUT		FF 	 Carry8	    
+100 feature-uri	 	    64		32		10^(-4)		 - 	1473950		59115 	 176562      
+100 feature-uri		    32          16		10^(-4)		 - 	316377		17589	 36778        
+100 feature-uri 	    8		-		10^(-5)		 -	146220		7027	 17358
+25 de feature-uri	    16		8		10^(-5)		578 	17844		16521	 887
+
+
+============================= PERFORMANTE AFECTATE =======================
+
+Strat 1		Strat 2 dim	Reutilizeaza blocuri DSP/LUT?	Prec. numere			Acc.  					Prec.						Recall					F1 Scor
+64 		   32				Nu			10^(-4)		0.8444 (python) 0.8444 (csim)		0.8288 (python)  0.8314 (csim)			0.8554 (python) 0.8514 (csim)	  	0.8419 (python) 0.8413 (csim)
+64                 32				Nu			10^(-5)			0.8366					0.8067					0.8715					0.8378
+32		   16				Nu			10^(-5)			0.8521					0.8240					0.8835					0.8527
+16		   8				Nu			10^(-5)		0.8405 (python) 0.8444 (csim)		0.8175 (python) 0.8238 (csim)			0.8635 			         0.8398	(python) 0.8431 (csim)
+8		   -				Nu			10^(-5)			 0.8405					0.8104					0.8755					0.8417		
+16		   8				Da			10^(-5)		   	 0.8482					0.8490					0.8353					0.8421
+
+
+=========================== REZULTATE FINALE ================================
+
+		
+Primul model
+Al doilea model

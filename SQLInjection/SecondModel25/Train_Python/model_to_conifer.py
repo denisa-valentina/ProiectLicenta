@@ -70,9 +70,9 @@ with open("y_test.pkl", "rb") as file:
 print("Test metrics: ")
 print(model_performance_classification_sklearn(model, X_test, y_test))
 
-print(x_test.shape[0])
-print(x_test.shape[1])
-print(X_test)
+# print(x_test.shape[0])
+# print(x_test.shape[1])
+# print(X_test)
 
 config = conifer.backends.xilinxhls.auto_config()
 # config = conifer.backends.cpp.auto_config()
@@ -94,7 +94,7 @@ model_hls = conifer.converters.convert_from_sklearn(model, config)
 # model_cpp = conifer.converters.convert_from_sklearn(model, config)
 
 
-# model_hls.write()
+model_hls.write()
 # # # model_hls.compile()
 # # model_hls.build() # synth=True, export=True, vsynth=True)
 # # model_hls.build()

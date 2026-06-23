@@ -1,0 +1,397 @@
+SQL Injection - 50
+
+Test metrics: 
+   Accuracy    Recall  Precision  F1 score
+0  0.924806  0.805325   0.989807  0.888087
+
+--- Macro-Average (all 1 classes) ---
+  Accuracy  = 0.9248
+  Precision = 0.9898
+  Recall    = 0.8053
+  F1 Score  = 0.8881
+  
+  
+  CLB LUT = 6233 (9910)
+  CLB Reg = 2209 (6593)
+  Carry8 = 668 (697)
+  
+  CLB LUT = 9910
+  CLB Reg = 6593
+  Carry8 = 697
+  
+=== RF Accelerator - ZCU104 ===
+DMA initialized
+Accelerator initialized
+UART initialized
+
+--- Phase 1: Single vector test ---
+Running inference on 1 vectors...
+Number of ticks: 582
+Number of ticks per vector: 582
+Inference time: 5 us / 5820 ns
+Per vector:     5820 ns
+Prediction: 1
+Phase 1 PASSED
+
+--- Phase 2: Full dataset ---
+Loading 6184 vectors...
+Vectors loaded
+Running inference on 6184 vectors...
+Number of ticks: 363594
+Number of ticks per vector: 58
+Inference time: 3635 us / 3635940 ns
+Per vector:     587 ns
+
+========== METRICS ==========
+Vectors : 6184
+TP=1845  FP=19  TN=3874  FN=446
+==============================
+Phase 2 PASSED
+  
+HARDWARE METRICS0.92480 0.98980 0.80532 0.88808
+
+=== RF Software - ZCU104 ===
+UART initialized
+
+--- Phase 1: Single vector test ---
+Freq: 100000000
+Number of ticks: 1267
+Inference time: 12 us / 12670 ns
+Prediction: 1
+Phase 1 PASSED
+
+--- Phase 2: Full dataset ---
+Running inference on 6184 vectors...
+Freq: 100000000
+Number of ticks: 1563835
+Number of ticks per vector: 252
+Inference time: 15638 us / 15638350 ns
+Inference time per vector: 2528 ns
+
+========== METRICS ==========
+Vectors : 6184
+TP=1845  FP=19  TN=3874  FN=446
+==============================
+Phase 2 PASSED
+  
+METRICS 0.92480 0.98980 0.80532 0.88808  
+  
+---------------------------------------------------------------------------
+
+SQL Injection - 25
+
+Test metrics: 
+   Accuracy    Recall  Precision  F1 score
+0  0.943887  0.887822   0.957627  0.921404
+  
+  CLB LUT = 6999 (10691)
+  CLB Reg = 1579 (5985)
+  Carry8 = 749 (779)
+  
+  CLB LUT = 10691
+  CLB Reg = 5985
+  Carry8 = 779
+
+=== RF Accelerator - ZCU104 ===
+DMA initialized
+Accelerator initialized
+UART initialized
+
+--- Phase 1: Single vector test ---
+Running inference on 1 vectors...
+Number of ticks: 547
+Number of ticks per vector: 547
+Inference time: 5 us / 5470 ns
+Per vector:     5470 ns
+Prediction: 1
+Phase 1 PASSED
+
+--- Phase 2: Full dataset ---
+Loading 6184 vectors...
+Vectors loaded
+Running inference on 6184 vectors...
+Number of ticks: 205086
+Number of ticks per vector: 33
+Inference time: 2050 us / 2050860 ns
+Per vector:     331 ns
+
+========== METRICS ==========
+Vectors : 6184
+TP=2034  FP=90  TN=3803  FN=257
+==============================
+Phase 2 PASSED
+
+  
+METRICS 0.94388 0.95762 0.88782 0.92140
+
+=== RF Software - ZCU104 ===
+UART initialized
+
+--- Phase 1: Single vector test ---
+Freq: 100000000
+Number of ticks: 1470
+Inference time: 14 us / 14700 ns
+Prediction: 1
+Phase 1 PASSED
+
+--- Phase 2: Full dataset ---
+Running inference on 6184 vectors...
+Freq: 100000000
+Number of ticks: 1602406
+Number of ticks per vector: 259
+Inference time: 16024 us / 16024060 ns
+Inference time per vector: 2591 ns
+
+========== METRICS ==========
+Vectors : 6184
+TP=2034  FP=90  TN=3803  FN=257
+==============================
+Phase 2 PASSED
+
+METRICS 0.94388 0.95762 0.88782 0.92140
+  
+---------------------------------------------------------------------------
+
+Jailbreak detection 
+
+Random Forest - Test Accuracy: 0.8385, Precision: 0.8097, Recall: 0.8715, F1: 0.8395
+
+  CLB LUT = 30516 (34208)
+  CLB Reg = 8397 (12803)
+  Carry8 = 3297 (3327)
+  
+  CLB LUT = 34208
+  CLB Reg = 12803
+  Carry8 = 3327
+  
+ === RF Accelerator - ZCU104 ===
+DMA initialized
+Accelerator initialized
+UART initialized
+
+--- Phase 1: Single vector test ---
+Running inference on 1 vectors...
+Number of ticks: 645
+Number of ticks per vector: 645
+Inference time: 6 us / 6450 ns
+Per vector:     6450 ns
+Prediction: 1
+Phase 1 PASSED
+
+--- Phase 2: Full dataset ---
+Loading 514 vectors...
+Vectors loaded
+Running inference on 514 vectors...
+Number of ticks: 58463
+Number of ticks per vector: 113
+Inference time: 584 us / 584630 ns
+Per vector:     1137 ns
+
+========== METRICS ==========
+Vectors : 514
+TP=217  FP=51  TN=214  FN=32
+==============================
+Phase 2 PASSED
+  
+METRICS 0.83852 0.80970 0.87148 0.83945
+
+=== RF Software - ZCU104 ===
+UART initialized
+
+--- Phase 1: Single vector test ---
+Freq: 100000000
+Number of ticks: 3095
+Inference time: 30 us / 30950 ns
+Prediction: 1
+Phase 1 PASSED
+
+--- Phase 2: Full dataset ---
+Running inference on 514 vectors...
+Freq: 100000000
+Number of ticks: 350293
+Number of ticks per vector: 681
+Inference time: 3502 us / 3502930 ns
+Inference time per vector: 6815 ns
+All 514 results sent
+
+========== METRICS ==========
+Vectors : 514
+TP=217  FP=51  TN=214  FN=32
+==============================
+Phase 2 PASSED
+
+METRICS 0.83852 0.80970 0.87148 0.83945
+ 
+---------------------------------------------------------------------------
+
+
+64-32
+
+Acc 0.8444 (python) 0.8444 (csim)		Prec 0.8288 (python)  0.8314 (csim)			Recall 0.8554 (python) 0.8514 (csim)	  	F1 Scor 0.8419 (python) 0.8413 (csim)
+
+CLB LUT = 1473950 (1477636) 
+CLB Reg = 59115 (63517)
+Carry8 = 176562 (176592)
+
+CLB LUT = 1477636
+CLB Reg = 63517
+Carry8 = 176592
+
+------------------------------------------------------------------------
+
+32-16
+
+Acc 0.8521					Prec 0.8240					Recall 0.8835					F1 Scor 0.8527
+
+CLB LUT =  (316377) 
+CLB Reg =  (17589)
+Carry8 =  (36778)
+
+
+
+-----------------------------------------------------------------------
+
+8-
+
+Acc 0.8405 Prec 0.8104 Recall 0.8755 F1 Scor 0.8417
+
+CLB LUT = 146220 (149906)
+CLB Reg = 7027 (11429)
+CARRY8 = 17358 (17388)
+
+CLB LUT = 149906
+CLB Reg = 11429
+CARRY8 = 17388
+
+=== RF Accelerator - ZCU104 ===
+DMA initialized
+Accelerator initialized
+UART initialized
+
+--- Phase 1: Single vector test ---
+Running inference on 1 vectors...
+Number of ticks: 661
+Number of ticks per vector: 661
+Inference time: 6 us / 6610 ns
+Per vector:     6610 ns
+Prediction: 1
+Phase 1 PASSED
+
+--- Phase 2: Full dataset ---
+Loading 514 vectors...
+Vectors loaded
+Running inference on 514 vectors...
+Number of ticks: 58981
+Number of ticks per vector: 114
+Inference time: 589 us / 589810 ns
+Per vector:     1147 ns
+
+========== METRICS ==========
+Vectors : 514
+TP=218  FP=51  TN=214  FN=31
+==============================
+Phase 2 PASSED
+
+=== Complete ===
+
+0.84375 METRICS 0.84046 0.81040 0.87550 0.84169
+
+=== RF Software - ZCU104 ===
+UART initialized
+
+--- Phase 1: Single vector test ---
+Freq: 100000000
+Number of ticks: 4709
+Inference time: 47 us / 47090 ns
+Prediction: 1
+Phase 1 PASSED
+
+--- Phase 2: Full dataset ---
+Running inference on 514 vectors...
+Freq: 100000000
+Number of ticks: 2091828
+Number of ticks per vector: 4069
+Inference time: 20918 us / 20918280 ns
+Inference time per vector: 40697 ns
+
+========== METRICS ==========
+Vectors : 514
+TP=218  FP=51  TN=214  FN=31
+==============================
+Phase 2 PASSED
+
+METRICS 0.84046 0.81040 0.87550 0.84169
+
+
+16-8
+
+PyTorch Classifier - Accuracy (Test): 0.8482, Precision: 0.8490, Recall: 0.8353, F1: 0.8421
+
+CLB LUT = 17844 (21530)
+CLB Reg = 16521 (20923)
+CARRY8 = 887 (917)
+
+CLB LUT = 21530
+CLB Reg = 20923
+CARRY8 = 917
+
+=== RF Accelerator - ZCU104 ===
+DMA initialized
+Accelerator initialized
+UART initialized
+
+--- Phase 1: Single vector test ---
+Running inference on 1 vectors...
+Number of ticks: 576
+Number of ticks per vector: 576
+Inference time: 5 us / 5760 ns
+Per vector:     5760 ns
+Prediction: 0
+Phase 1 PASSED
+
+--- Phase 2: Full dataset ---
+Loading 514 vectors...
+Vectors loaded
+Running inference on 514 vectors...
+Number of ticks: 27279
+Number of ticks per vector: 53
+Inference time: 272 us / 272790 ns
+Per vector:     530 ns
+
+========== METRICS ==========
+Vectors : 514
+TP=208  FP=37  TN=228  FN=41
+==============================
+Phase 2 PASSED
+
+METRICS 0.84824 0.84897 0.83534 0.84210
+
+=== RF Software - ZCU104 ===
+UART initialized
+
+--- Phase 1: Single vector test ---
+Freq: 100000000
+Number of ticks: 7572
+Inference time: 75 us / 75720 ns
+Prediction: 1
+Phase 1 PASSED
+
+--- Phase 2: Full dataset ---
+Running inference on 514 vectors...
+Freq: 100000000
+Number of ticks: 3556957
+Number of ticks per vector: 6920
+Inference time: 35569 us / 35569570 ns
+Inference time per vector: 69201 ns
+
+========== METRICS ==========
+Vectors : 514
+TP=208  FP=37  TN=228  FN=41
+==============================
+Phase 2 PASSED
+
+METRICS 0.84824 0.84897 0.83534 0.84210
+
+
+
+
