@@ -1,1 +1,0 @@
-set(DRIVER_LIST avbuf;axidma;axipmon;canps;clockps;common;coresightps_dcc;csudma;ddrcpsu;dpdma;dppsu;emacps;gpiops;iicps;ipipsu;my_prj_accelerator;qspipsu;resetps;rtcpsu;scugic;sdps;sysmonpsu;ttcps;uartlite;uartps;usbpsu;video_common;wdtps;zdma)
