@@ -1,0 +1,4 @@
+domain_path: /home/denisaa/Desktop/Licenta_Denisa_2026/ProiectLicenta/NeuralNetwork/MLP_100_cut/Vitis_HW/platform/export/platform/sw/standalone_psu_cortexa53_0
+app_src_dir: /tools/Xilinx/Vitis/2024.2/data/embeddedsw/lib/sw_apps/empty_application
+template: empty_application
+lang: c
